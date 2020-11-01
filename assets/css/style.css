@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+p  {
+    
+    color: #999999;
+}
+
+/*======Header Section======= */
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background: #e8e8e8;
+    padding: 20px 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    flex: 0 0 auto;
+}
+
+nav.main-menu {
+    width: 80%;
+    flex: 0 0 auto;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333366;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    padding: 8px 24px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    color: #15a3f9;
+}
+/*======Header Section======= */
+
+/* ===============Hero Section =================*/
+img {
+    max-width: 100%;
+}
+
+.section-banner img {
+    width: 100%;
+}
+
+.section-banner {
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 600px;
+}
+
+.banner-content h1 {
+    font-size: 120px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-content span {
+    background: #15a3f9;
+    height: 2px;
+    width: 100%;
+    display: block;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.banner-content p {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #15a3f9;
+    display: inline-block;
+    padding: 16px 44px;
+    border-radius: 5px;
+    margin-top: 60px;
+    transition: 0.4s;
+}
+.btn:hover {
+    background: #15a3f9;
+}
+i.fa.fa-arrow-down {
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+}
+/* ===============Hero Section =================*/
+/* ===============About Section =================*/
+.about-section {
+    background: #e8e8e8;
+    text-align: center;
+    padding: 80px 0;
+    /* height: 330px; */
+}
+
+.about-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #2d3950;
+}
+
+.about-section p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+/* ===============About Section =================*/
+
+/* ===============Feature-section=============== */
+.col {
+    width: 33.33%;
+}
+
+.feature {
+    text-align: center;
+    padding: 45px;
+}
+
+.feature h3 {
+    font-size: 22px;
+    color: #2d3950;
+    margin: 20px 0;
+}
+
+.feature span {
+    height: 100px;
+    width: 100px;
+    background: rgb(44,167,241);
+    background: linear-gradient(90deg, rgba(44,167,241,1) 50%, rgba(90,185,242,1) 50%);
+    display: block;
+    margin: auto;
+    line-height: 100px;
+    font-size: 30px;
+    color: #fff;
+}
+.feature span i {
+    text-shadow: black 0px 0px 3px;
+}
+/* ===============Showcase-section=============== */
+.showcase-section {
+    text-align: center;
+    background: #e8e8e8;
+    padding: 80px 0;
+}
+
+.showcase-section h2 {
+    margin-bottom: 10px;
+}
+
+.showcase-section p {
+    margin-bottom: 80px;
+}
+
+.showcase-section img {
+    width: 100%;
+}
+
+.showcase-section .flex .col {
+    padding: 20px;
+}
+
+.showcase {
+    /* padding: 20px; */
+    position: relative;
+}
+
+.showcase-overlay {
+    background: #15a3f9b3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+.showcase ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.showcase ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.showcase ul li a {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+    line-height: 40px;
+    border-radius: 5px;
+}
+/* ===============Showcase-section=============== */
+    .contact-section {
+        background: url(../img/slider3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        padding: 75px 0;
+    }
+    
+    .contact-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+        background: #2d394fe6;
+    }
+    
+    .contact-form {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+    
+    .contact-section .container {
+        position: relative;
+        text-align: center;
+    }
+    
+    .contact-form h2 {
+        font-size: 40px;
+        color: #fff;
+        font-weight: 400;
+    }
+    
+    .contact-form p {
+        margin: 10px 0;
+    }
+    
+    .contact-form form input, .contact-form form textarea {
+        width: 100%;
+        border: 1px solid #999;
+        background: transparent;
+        border-radius: 3px;
+        padding: 15px 15px;
+        margin-bottom: 15px;
+    }
+    
+    .contact-form ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contact-form form ul li input {
+        width: auto;
+        margin-bottom: 0;
+    }
+    
+    .contact-form form ul li {
+        list-style: none;
+    }
+    
+    .contact-form form ul li input[type="submit"] {
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #15a3f9;
+        display: inline-block;
+        padding: 16px 44px;
+        border-radius: 5px;
+    }
+    
+    .contact-form label {
+        color: #fff;
+        padding-left: 10px;
+    }
+    
+    .contact-form form input[type="checkbox"] {
+        background: red;
+        color: red;
+    }
+/* ===============Footer-section=============== */
+
+.copyright {
+    width: 50%;
+    flex: 0 0 auto;
+}
+.social{
+    width: 50%;
+    flex: 0 0 auto;
+}
+.social ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.social ul li a {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #15a3f9;
+    line-height: 40px;
+    border-radius: 5px;
+    background: #15a3f9;
+    text-align: center;
+}
+
+.footer-section {
+    padding: 20px 0;
+}
+/* ===============Footer-section=============== */
+/* ===============Footer-section=============== */
+
+
+a.top-arrow {
+    position: fixed;
+    bottom: 25px;
+    right: 0px;
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    /* border: 1px solid #15a3f9; */
+    line-height: 40px;
+    border-radius: 5px;
+    background: #15a3f9;
+    text-align: center;
+}
+/* ===============Footer-section=============== */
